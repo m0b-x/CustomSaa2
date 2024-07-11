@@ -46,6 +46,9 @@ void WINAPI Load()
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 {
 
+	if (!GetModuleHandleA("SAMP.dll"))
+		return TRUE;
+
 	switch(fdwReason)
 	{
 	case DLL_PROCESS_ATTACH:

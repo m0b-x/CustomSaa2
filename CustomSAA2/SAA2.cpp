@@ -4,7 +4,31 @@
 
 const char* FILES_TO_LOAD[] =
 {
-	"weapon.dat"
+	"loadscs.txd",
+	"HANDLING.CFG",
+	"surface.dat",
+	"TIMECYC.DAT",
+	"stream.ini",
+	"melee.dat",
+	"DEFAULT.DAT",
+	"DEFAULT.IDE",
+	"VEHICLES.IDE",
+	"PEDS.IDE",
+	"GTA.DAT",
+	"SCRIPT.IMG",
+	"LAn2.IDE",
+	"LAxref.IDE",
+	"props.IDE",
+	"OBJECT.DAT",
+	"CARMODS.DAT",
+	"VEHICLE.TXD",
+	"tracks2.dat",
+	"tracks4.dat",
+	"PED.DAT",
+	"WEAPON.DAT",
+	"main.scm",
+	"AR_STATS.DAT",
+	"shopping.dat"
 };
 char def_dir[MAX_PATH + 1] = {0};
 void* CreateFileAAddr = NULL;
