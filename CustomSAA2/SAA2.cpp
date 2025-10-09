@@ -2,6 +2,7 @@
 #include <iostream>
 #include "SAA2.h"
 
+
 const char* FILES_TO_LOAD[] =
 {
 	"loadscs.txd",
@@ -17,6 +18,7 @@ const char* FILES_TO_LOAD[] =
 	"GTA.DAT",
 	"SCRIPT.IMG",
 	"LAn2.IDE",
+	"law2.IDE",
 	"LAxref.IDE",
 	"props.IDE",
 	"OBJECT.DAT",
@@ -28,12 +30,14 @@ const char* FILES_TO_LOAD[] =
 	"WEAPON.DAT",
 	"main.scm",
 	"AR_STATS.DAT",
+	"carcols.dart"
 	"shopping.dat"
 };
+
 char def_dir[MAX_PATH + 1] = {0};
 void* CreateFileAAddr = NULL;
 
-void Patch(void* source, void* replace, int num)
+static void Patch(void* source, void* replace, int num)
 {
 	DWORD dwOld;
 	VirtualProtect(source, 5,  PAGE_EXECUTE_READWRITE, &dwOld);
@@ -108,30 +112,34 @@ HANDLE WINAPI CreateFileAHooked(
 
 	if (fnd)
 	{
-		
-		char szFile[MAX_PATH + 1] = {0};
-		wchar_t wszFileName[MAX_PATH + 1] = {0};
+		char szFile[MAX_PATH + 1] = { 0 };
+		wchar_t wszFileName[MAX_PATH + 1] = { 0 };
 		int len = wsprintf(szFile, "%s\\CustomSaa\\%s", def_dir, fileName);
 		size_t convertedChars;
 		mbstowcs_s(&convertedChars, wszFileName, szFile, len);
 
-		if (hFile != INVALID_HANDLE_VALUE)
+		DWORD attr = GetFileAttributesW(wszFileName);
+		if (attr != INVALID_FILE_ATTRIBUTES && !(attr & FILE_ATTRIBUTE_DIRECTORY))
 		{
-			/*char buffer[256];
-			DWORD dwBytesRead;
-			DWORD dwBytesWritten = 0;
-			
-			do
+			if (hFile != INVALID_HANDLE_VALUE)
 			{
-				ReadFile(hFile, buffer, sizeof(buffer), &dwBytesRead, NULL);
-			} while (dwBytesRead > 0);
-			*/
+				CloseHandle(hFile);
+			}
 
-			CloseHandle(hFile);
+			hFile = CreateFileW(
+				wszFileName,
+				dwDesiredAccess,
+				dwShareMode,
+				lpSecurityAttributes,
+				dwCreationDisposition,
+				dwFlagsAndAttributes,
+				hTemplateFile
+			);
 		}
-
-		hFile = CreateFileW(wszFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes,
-			dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
+		else
+		{
+			//Empty
+		}
 	}
 
 	return hFile;

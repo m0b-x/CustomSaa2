@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|solutionrelative:CustomSAA2\\DSOUND.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\SAA2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|solutionrelative:CustomSAA2\\SAA2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|solutionrelative:CustomSAA2\\DSOUND.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD00BCCC-AC46-4DF6-8030-940B0FCCA028}|CustomSAA2\\CustomSAA2.vcxproj|D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.def||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "CustomSAA2\\SAA2.h",
               "ToolTip": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\SAA2.h",
               "RelativeToolTip": "CustomSAA2\\SAA2.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-07T09:09:43.09Z"
+              "WhenOpened": "2024-07-07T09:09:43.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,32 +49,33 @@
               "RelativeDocumentMoniker": "CustomSAA2\\DSOUND.def",
               "ToolTip": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.def",
               "RelativeToolTip": "CustomSAA2\\DSOUND.def",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001913|",
-              "WhenOpened": "2024-06-19T10:36:10.913Z"
+              "WhenOpened": "2024-06-19T10:36:10.913Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SAA2.cpp",
               "DocumentMoniker": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\SAA2.cpp",
               "RelativeDocumentMoniker": "CustomSAA2\\SAA2.cpp",
               "ToolTip": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\SAA2.cpp",
               "RelativeToolTip": "CustomSAA2\\SAA2.cpp",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwB4AAAABAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-19T09:35:56.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DSOUND.cpp",
               "DocumentMoniker": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.cpp",
               "RelativeDocumentMoniker": "CustomSAA2\\DSOUND.cpp",
               "ToolTip": "D:\\Alex\\Projects\\Asi or Dlls\\CustomSAA2\\CustomSAA2\\DSOUND.cpp",
               "RelativeToolTip": "CustomSAA2\\DSOUND.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwDAAAAAGAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-19T09:34:42.866Z",
               "EditorCaption": ""

@@ -1,8 +1,8 @@
-﻿  DSOUND.cpp
+﻿  SAA2.cpp
      Creating library D:\Alex\Projects\Asi or Dlls\CustomSAA2\Release\DSOUND.lib and object D:\Alex\Projects\Asi or Dlls\CustomSAA2\Release\DSOUND.exp
   Generating code
   1 of 20 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   CustomSAA2.vcxproj -> D:\Alex\Projects\Asi or Dlls\CustomSAA2\Release\DSOUND.dll
